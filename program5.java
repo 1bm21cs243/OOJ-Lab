@@ -22,7 +22,7 @@ class Cur_acc extends Account {
 	void cheque_deposit(int amt)
 	{
 		balance+=amt;
-		if(pen!=0 && balance>3000)
+		if(pen!=0 && balance>1000)
 		{
 			balance=balance-pen;
 			pen=0;
@@ -45,7 +45,7 @@ class Cur_acc extends Account {
 		if(balance<2000)
 		{
 			System.out.println("You are imposed with service charge");
-			pen=pen+3000;
+			pen=pen+1000;
 			System.out.println("Penalty: "+pen);
 		}	
 		System.out.println("Name: "+name+" Accno: "+accno+" Balance: "+balance);
